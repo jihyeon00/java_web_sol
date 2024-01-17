@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outputText { border: 1px solid green; }
+    </style>
+</head>
+<body>
+    <h2>jquery 라이브러리를 연동 예제</h2>
+
+    <input type="button" value="글자출력하기" id="outputButton">
+
+    <h3 id="outputText"></h3> <!-- 여기에 글자 출력함 -->
+
+    <!-- 1. 제이쿼리를 다운로드 받은 경로를 연동 -->
+    <!-- js폴더생성 + 라이브러리 저장 -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- 2. 샘플 코드를 붙여넣는다 -->
+    <script>
+        // 다른 글자로 바꾸고 싶다
+        var sentences = [
+            "안녕하세요, jQuery를 이용한 출력 예제입니다!",
+            "안녕하세요, jsp를 이용한 출력 예제입니다!",
+            "안녕하세요, java를 이용한 출력 예제입니다!"
+        ];
+        // jQuery를 사용하여 문서가 준비되면 스크립트 실행
+        $(document).ready(function() {
+            // 버튼 클릭 시 글자 출력
+            $("#outputButton").click(function() {
+                temp = generateRandomNum();
+                $("#outputText").text(sentences[temp]);
+            });
+        });
+
+        function generateRandomNum() {
+
+            result = Math.floor(Math.random() * 3);
+            return result;
+        }
+    </script>
+</body>
+</html>

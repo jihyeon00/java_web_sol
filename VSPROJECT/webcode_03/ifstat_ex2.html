@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>비행기 이미지 변경</h2>
+
+    <p>다음버튼을 누르면 1번->2번->3번->1번->2번</p>
+    <img src="plane1.jpg" alt="비행기" id="imageElement">
+    <br>
+    <input type="button" value="다음이미지" onclick="changeImage()">
+
+    <script>
+        var number = 1;         
+        // 이미지 요소 찾기
+        var imageElement = document.getElementById('imageElement');
+
+        function changeImage() {
+            // 다음 이미지 인덱스로 변경
+            if (number < 3) {
+                number++;    // 1 -> 2
+            } else {
+                number = 1;
+            }
+            // 현재 인덱스에 해당하는 이미지 경로 설정
+            if (number === 1) {
+                imageElement.src = 'plane1.jpg';
+            } else if (number === 2) {
+                imageElement.src = 'plane2.jpg';
+            } else if (number === 3) {
+                imageElement.src = 'plane3.jpg';
+            }        
+        }
+    </script>
+</body>
+</html>

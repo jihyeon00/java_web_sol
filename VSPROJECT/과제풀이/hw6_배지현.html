@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style>
+    ul {
+        display: inline-block;
+        background-color: #333333;
+        height: 60px;
+        width: 600px;
+    }
+    ul li {
+        float: left;
+        padding: 18px 20px;
+        list-style: none;
+        text-decoration-line: none;
+        color: white;
+        text-align: center;
+    }
+    ul li a {
+        text-decoration-line: none;
+        color: white;
+    }
+</style>
+<script src="js/jquery-3.7.1.min.js"></script>
+<body>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+<script>
+    $(document).ready(function(){
+        $('li').hover(function(){
+            $(this).css('background-color','#555555');
+        }, function(){
+            $(this).css('background-color','#333333');
+        });
+    });
+
+</script>
+</body>
+</html>

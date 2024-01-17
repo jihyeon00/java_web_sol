@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴 예제</title>
+    <style>
+        /* 메뉴 스타일 */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #555;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 메뉴 아이템에 마우스를 올렸을 때의 이벤트
+            $('li').hover(
+                function () {
+                    // 마우스를 올렸을 때의 처리
+                    $(this).css('background-color', '#555');
+                },
+                function () {
+                    // 마우스를 내렸을 때의 처리
+                    $(this).css('background-color', '#333');
+                }
+            );
+        });
+    </script>
+</head>
+<body>
+
+<!-- 메뉴 -->
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+</body>
+</html>

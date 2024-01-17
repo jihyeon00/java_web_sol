@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    header{
+        background-color: #00387F;
+        color: white;
+        text-align: center;
+    }
+    footer{
+        background-color: #60870A;
+        color: white;
+        text-align: center;
+        height: 40px;
+    }
+    body{
+        width: 1024px;
+    }
+    .wrapper{
+        display: grid;
+    }
+    #body1{
+        padding-left: 30px;
+        padding-bottom: 100px;
+        grid-column: 1 / 3;
+    }
+    #body2{
+        grid-column: 3 / 4;
+        border-left: 1px silver solid;
+        padding-left: 30px;
+    }
+    #nav1{
+        background-color: #60870A;
+        color: white;
+        text-align: center;
+        height: 40px;
+        padding-bottom: 5px;
+
+    }
+    #nav1>ul {
+        display: inline-block;
+    }
+    #nav1>ul li {
+        float: left;
+        padding: 0 20px;
+        list-style: none;
+        text-decoration-line: none;
+        color: white;
+        text-align: center;
+    }
+    #nav1>ul li a {
+        text-decoration-line: none;
+        color: white;
+    }
+    table {
+        border: 1px white ;
+        width: 700px;
+    }
+    th {
+        background-color: lightgray;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+      }
+
+    #tr1{
+        text-align: center;
+    }
+    #footer{
+        padding-top: 10px;
+    }
+</style>
+<header>
+    <br>
+    <p><h2>웹페이지 디자인 연구소</h2></p>
+    <p>school of web</p>
+    <br>
+</header>
+<body>
+    <nav id="nav1">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PEOPLE</a></li>
+            <li><a href="#">CLASS</a></li>
+            <li><a href="#" style="color: #DD6A09;">NOTICE</a></li>
+            <li><a href="#">PICTURE</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper">
+        <div id="body1">
+            <p><h3>공지사항 & 뉴스</h3></p>
+            <p>2020.05.05 by 관리자</p>
+            <p><h3>샘플게시판</h3></p>
+            <table>
+                <tr id="tr1">
+                    <th><b>번호</b></th>
+                    <th><b>제목</b></th>
+                    <th><b>작성자</b></th>
+                    <th><b>날짜</b></th>
+                    <th><b>조회수</b></th>
+                    <th><b>댓글수</b></th>
+                </tr>
+                <tr>   
+                    <td>165</td>
+                    <td><a href="#">새 스티커 상품 출시</a></td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>   
+                    <td>166</td>
+                    <td><a href="#">입문자 위한 안내</a></td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>   
+                    <td>167</td>
+                    <td><a href="#">웹사이트 개발 도구 소개</a></td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>   
+                    <td>168</td>
+                    <td><a href="#">안녕하세요</a></td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+                <tr>   
+                    <td>169</td>
+                    <td><a href="#">게시판을 오픈했습니다</a></td>
+                    <td>admin</td>
+                    <td>2020.06.21</td>
+                    <td>2</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+        <div id="body2">
+            <br>
+            <br>
+            <img src="sun.jpg" alt="일출" style="width: 200px;">
+        </div>
+    </div>
+</body>
+<footer>
+<div id="footer">
+    <i>Copywriter ⓒ <span style="color: #DD6A09;">GeneratePress WebDev</span></i>
+</div>
+</footer>
+</html>
